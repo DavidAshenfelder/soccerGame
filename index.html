@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Shootout</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+
+<section class="menuPage">
+  <audio src="sound/01 The Final Countdown.m4a" controls autoplay loop>
+  <p>Your browser does not support the <code>audio</code> element </p>
+  </audio>
+  <h1>FINAL SHOOTOUT</h1>
+  <div class="buttonWrapper">
+    <div class="startWrapper">
+      <div class="startBtnWrapper">
+        <button id="startButton" type="button" name="name" value="Stat">Start</button>
+      </div>
+    </div>
+    <div class="rulesWrapper">
+      <div class="rulesBtnWrapper">
+        <button type="button" name="name" value="Stat">Rules</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="gamePage" style="display: none;">
+  <div class="gamePageWrapper">
+    <div class="fieldWrapper">
+      <div class="field">
+        <div class="goalWrapper">
+          <div class="goal">
+            <div class="scoreBoard">
+              <h3>ScoreBoard</h3>
+              <div class="shotsWrapper">
+                Shots:
+                <div class="shots">
+                  5
+                </div>
+              </div>
+              <div class="scoreWrapper">
+                Score:
+                <div class="score">
+                  0
+                </div>
+              </div>
+            </div>
+            <div class="ballLightWrapper">
+            <div class="ballLight">
+              <img class="none" id="ball3" src="images/soccerballRed.png" value="Shoot"/>
+            </div>
+            <div class="ballLight">
+              <img class="none" id="ball2" src="images/soccerballRed.png" value="Shoot"/>
+            </div>
+            <div class="ballLight">
+            <img class="none" id="ball1" src="images/soccerballRed.png" value="Shoot"/>
+          </div>
+          </div>
+            <div class="goalie">
+              <img id="goalieMiss" class="none" src="images/goliemissing2.png" alt=""  />
+              <img id ="goalieSave" src="images/goliestop.png" class="none" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="ballWrapper">
+          <div class="image" id="ball" rel= 5 data-value= 0>
+            <img src="images/soccerball.png" value="Shoot"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="titles none">
+  <div class="video none">
+
+  </div>
+  <div class="titleWrapper">
+  <div class="winner none">
+    <h1>
+      YOU WIN!!!
+    </h1>
+    <button class="playAgain" type="button" name="button">Play Again?</button>
+  </div>
+  <div class="lose none">
+    <h1>
+      YOU LOSE!!!
+    </h1>
+  </div>
+  <h1 id="goal" class="sayGoal none">
+    GOOOOAAAAALLL!!!
+  </h1>
+  <h1 class="Suck none">
+    YOU SUCK!!!
+  </h1>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="data.js"></script>
+</body>
+</html>

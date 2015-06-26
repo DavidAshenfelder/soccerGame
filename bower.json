@@ -1,0 +1,23 @@
+{
+  "name": "soccerGame",
+  "version": "0.0.0",
+  "authors": [
+    "David Ashenfelder <Dashenfelder@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.3",
+    "mocha": "~2.2.5",
+    "jquery": "~2.1.4",
+    "chai": "~3.0.0",
+    "underscore": "~1.8.3",
+    "sinonjs": "~1.14.1"
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../bower_components/mocha/mocha.css">
+  <title>Mocha Test</title>
+</head>
+<body>
+
+  <div id="mocha"></div>
+
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/sinonjs/sinon.js"></script>
+  <script src="../bower_components/mocha/mocha.js"></script>
+  <script src="../bower_components/chai/chai.js"></script>
+  <script type="text/javascript">
+  mocha.setup('bdd');
+  var expect = chai.expect;
+  </script>
+
+  <script src="../app.js" charset="utf-8"></script>
+
+  <script src="spec.constructors.js"></script>
+  <script>
+ mocha.run();
+</script>
+</body>
+</html>
